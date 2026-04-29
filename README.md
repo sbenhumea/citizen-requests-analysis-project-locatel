@@ -1,5 +1,4 @@
-# proyecto-final-ia-aplicada
-Proyecto Final del Diplomado de IA Aplicada: 
+# Proyecto Final del Diplomado de IA Aplicada: Análisis solicitudes Locales CDMX 
 
 
 Los archivos de raw data no se incluyen en el repositorio por su tamaño. Deben descargarse desde el SUAC de *0311 
