@@ -220,6 +220,3 @@ data/models/
 
 # Pycharm config
 .idea/
-
-# Gitignore
-.gitignore
