@@ -1,0 +1,41 @@
+name: prediccion-tiempos-resolucion-suac
+channels:
+  - conda-forge
+dependencies:
+  # Fixed baseline
+  - python=3.11
+  - jupyter
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+
+  # Parquet reading and writing (dataset_model, events, operational_features)
+  - pyarrow
+
+  # Pipeline, ColumnTransformer, baselines, Random Forest, trees, search,
+  # calibration and metrics. >=1.6 for FrozenEstimator (calibration, step 5.6)
+  - scikit-learn>=1.6
+
+  # Main model for both tracks: native categoricals and quantile objective
+  - lightgbm
+
+  # Comparison model (steps 4.4 and 5.4)
+  - xgboost
+
+  # Interpretability (objective 6 and step 7.5)
+  - shap
+
+  # Official calendar of Mexican public holidays (step 7.4)
+  - holidays
+
+  # Visualization
+  - seaborn
+  - plotly
+  # Export Plotly figures to static images for the README and to
+  # keep notebooks lightweight. Kaleido 1.x requires Chrome to be installed;
+  # if you don't have it, plotly.io.get_chrome() downloads it.
+  - python-kaleido
+
+  # Interactive demo (step 8.1)
+  - streamlit
